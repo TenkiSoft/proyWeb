@@ -16,7 +16,7 @@ def get_titles():
                 "Este es el Home 2"
             ],
             "section_b1":[
-                "SS","333"
+                "DEsarrollo de Software","333"
             ]
         },
         "services":{
@@ -92,7 +92,7 @@ def get_empties():
         "home":{
             "section_a1":{
                 "name":"ss",
-                "content":"logo"
+                "content":"Tenki-Soft"
             }
         }
     }
