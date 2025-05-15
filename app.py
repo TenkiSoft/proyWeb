@@ -11,4 +11,4 @@ def index():
     content_pages = Sections.get_content()
     return render_template('index.html',content_pages=content_pages)
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8000)
