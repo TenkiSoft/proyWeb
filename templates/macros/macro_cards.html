@@ -1,0 +1,19 @@
+{% macro getCards(class,section) %}
+    <div class='{{ class }} center'>
+        <div class='box_cards  center'>
+            <div class=' box_background  box_items'>
+                <div class="center box_items_background"><h1>Title</h1></div>
+                <div class="center" id="cards_contenido_{{ section.content.name }}">
+                    {% for item in section.content.cards %}
+                        <div class="box_items_background center cards_item_{{ section.content.name }}"><h2>{{ item.text }}</h2></div>
+                    {% endfor %}
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        get_message("{{ section.content.cantidad }}","{{ section.content.name }}")
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

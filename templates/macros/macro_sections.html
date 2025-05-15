@@ -1,0 +1,20 @@
+{% macro getSection(class,section) %}
+    {% if section.section_type == 'title' %}
+    {% from "macros/macro_title.html" import getTitle with context %}
+    {{ getTitle(class,section.content) }}
+    {% elif section.section_type == 'full' %}
+    {% from "macros/macro_full.html" import getFull with context %}
+    {{ getFull(class,section.content) }}
+    {% elif section.section_type == 'carrousel' %}
+    {% from "macros/macro_carrousel.html" import getCarrousel with context %}
+    {{ getCarrousel(class,section) }}
+    {% elif section.section_type == 'cards' %}
+    {% from "macros/macro_cards.html" import getCards with context %}
+    {{ getCards(class,section) }}
+    {% elif section.section_type == 'empty' %}
+    {% from "macros/macro_empty.html" import getEmpty with context %}
+    {{ getEmpty(class,section) }}
+    {% else %}
+    <div>No Hay </div>
+    {% endif %}
+{% endmacro %}

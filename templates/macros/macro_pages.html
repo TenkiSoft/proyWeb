@@ -1,0 +1,8 @@
+{% macro generatePages(pages) %}
+{% from "macros/macro_page.html" import generatePage with context %}
+    <div id="scrollable">
+        {% for page in pages %}
+            {{ generatePage(page) }}
+        {% endfor %}
+    </div>
+{% endmacro %}

@@ -1,0 +1,48 @@
+{% macro getCarrousel(class,section) %}
+    <div class='{{ class }} center'>
+        <div class=' box_carrousel center'>
+            <div class='box_items box_background'>
+            <div class="center box_items_background">
+                <div id="output_{{ section.content.name }}"></div>
+            </div>
+            <div class="carrousel_container">
+                <div class="center">
+                    <div class="boton" id="prev_{{ section.content.name }}"><</div>
+                </div>
+                <div class="carrusel">
+                    <div id="carrusel_contenido_{{ section.content.name }}">
+                        {% for item in section.content.cards %}
+                            <div class="carrusel-item{{ section.content.division }} center">
+                                <div class="box_items_background carrusel-item-content{{ section.content.division }} center" onclick='principal_modal.open_container()' ><h2>{{ item.text }}<h2></div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="boton" id="next_{{ section.content.name }}">></div>
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        carrousels['{{ section.content.name }}'] = new Carrousel(6,"{{ section.content.name }}","{{ section.content.division }}")
+                        console.log(carrousels)
+                        console.log(principal_modal)
+                        document.getElementById('next_{{ section.content.name }}').addEventListener('mousedown', () => {
+                            console.log("NEXT--8")
+                            console.log(carrousels)
+                            carrousels['{{ section.content.name }}'].get_next()
+                        });
+                        document.getElementById('prev_{{ section.content.name }}').addEventListener('click', () => {
+                            console.log("PREV")
+                            carrousels['{{ section.content.name }}'].get_prev()
+                        });
+                    });
+                </script>
+            </div>
+
+
+        </div>
+        </div>
+
+        
+    </div>
+{% endmacro %}

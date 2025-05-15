@@ -1,0 +1,27 @@
+{% macro getTitle(class,section) %}
+    <div class='{{ class }}  center'>
+        <div class="box_title center">
+            <div class="box_items box_background center">
+                <div class="box_items_background center box_title_title">
+                    {% if section.icon != None %}
+                        <div style="width: 10%;text-align: start;">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div style="width: 90%;text-align: start;">
+                            <h1> {{ section.title }}</h1>
+                        </div>
+                    {% else %}
+                        <div style="width: 100%;text-align: start;">
+                            <h1> {{ section.title }}</h1>
+                        </div>
+                    {% endif %}
+                    
+                </div>
+                <div class="box_items_background center box_title_description">
+                    <h3>{{ section.description }}</h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+{% endmacro %}

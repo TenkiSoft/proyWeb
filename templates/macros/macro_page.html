@@ -1,0 +1,17 @@
+{% macro generatePage(page) %}
+{% from "macros/macro_sections.html" import getSection with context %}
+    <div class="page page_{{ page.id }}">
+        <div class="box box_a section_a1 {{ page.id }}_A_1 {{ page.section_a1.section }}">
+            {{ getSection(class='box_back_a',section=page.section_a1) }} 
+        </div>
+        <div class="box box_b section_a2 {{ page.id }}_A_2 {{ page.section_a2.section }}">
+            {{ getSection(class='box_back_b',section=page.section_a2) }} 
+        </div>
+        <div class="box box_a section_b1 {{ page.id }}_B_1 {{ page.section_b1.section }}">
+            {{ getSection(class='box_back_a',section=page.section_b1) }} 
+        </div>
+        <div class="box box_b section_b2 {{ page.id }}_B_2 {{ page.section_b2.section }}">
+            {{ getSection(class='box_back_b',section=page.section_b2) }} 
+        </div>
+    </div>
+{% endmacro %}

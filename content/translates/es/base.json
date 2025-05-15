@@ -1,0 +1,50 @@
+{
+    "home":{
+        "title":"Tenki",
+        "title_description":"Software Development Company",
+        "description_title":"Quienes Somos",
+        "description_text":"Estamos comprometidos en proporcionar soluciones de software personalizadas que se adapten a las necesidades específicas de cada cliente. Ya sea que necesites una aplicación web, una herramienta de automatización o una solución de blockchain, estamos aquí para ayudarte a alcanzar tus objetivos empresariales. ¡Contáctanos para discutir cómo podemos trabajar juntos; tambien puedes usar nuestra herramienta de cotizacion y obtener un presupuesto sin compromiso!",
+        "how_title":"Como lo hacemos",
+        "how_text":"Contamos con un amplio catalogo de soluciones a tu disposicion, ademas de una amplia experiencia, desarrollando soluciones en diferentes areas con diversas nesecidades especificas. Estamos aca para que nos dejes todo en nuestras manos, analizaremos cada proyecto detalladamente y crearemos una solucion que tenga lo mejor de nosotros adaptado a cada necesidad."
+    },
+    "services":{
+        "general_title":"Nuestra compañía se especializa en ofrecer una amplia gama de servicios de desarrollo de software, adaptados a las necesidades específicas de cada cliente. Nos enfocamos en el desarrollo de aplicaciones utilizando tecnologías modernas y las mejores prácticas",
+        "general_text":"Al utilizar tecnologías actuales, garantizamos que las aplicaciones sean escalables, mantenibles y seguras. Además, estas tecnologías permiten una rápida implementación y actualizaciones.",
+        "integration":[
+            "Integracion de nuevas funcionalidades a tus sistemas.",
+            "Ofrecemos servicios de integración de software que permiten que diferentes herramientas y sistemas de una empresa trabajen juntos de manera eficiente. Esto incluye la integración de CRM, ERP y otras aplicaciones empresariales. La integración de sistemas mejora la comunicación entre departamentos, reduce errores y aumenta la eficiencia operativa. Ademas de incrementar la efectividad de los sistemas que esten en funcionamiento en la organizacion."
+        ],
+        "automatization":[
+            "Automatizacion de tareas y procesos repetitivos, en lapsos de tiempo determinados.",
+            "Creamos soluciones que automatizan tareas repetitivas y procesos empresariales, utilizando herramientas como RPA (Robotic Process Automation), scripts personalizados que realizaran tareas especificas y repetitivas en lapsos de tiempo determinados, Chatbots y asistentes virtuales con IA impleentada, Herramientas de consumo de informacion actualizada constantemente en la red, entre otros. La automatización reduce el tiempo y los costos operativos, minimiza errores humanos y libera a los empleados para que se concentren en tareas más estratégicas"
+        ],
+        "web":[
+            "Desarrollo de sitios web responsivos y aplicaciones web utilizando tecnologías modernas.",
+            "Un sitio web bien diseñado mejora la experiencia del usuario y puede aumentar la conversión de visitantes en clientes. Actualmente contamos con avances y soluciones especificas en las tecnologias web, seguramente si lo has visto en algun otro sitio, nosotros lo podemos desarrollar."
+        ],
+        "movil":[
+            "Desarrollo de aplicaciones móviles nativas e híbridas para iOS y Android.",
+            "Las aplicaciones móviles permiten a las empresas interactuar con sus clientes de manera más directa y ofrecer servicios en cualquier lugar y en cualquier momento, la portabilidad y la accesibilidad de los dispositivos moviles son una ventaja competitiva; Ademas se pueden aprovechar algunas carateristicas de los dispositivos moviles como la geolocalizacion, la camara, sensores, etc; para crear experiencias de usuario mas interactivas y personalizadas"
+        ],
+        "desktop":[
+            "Aplicaciones intuitivas y funcionales para sistemas operativos Windows y Linux.",
+            "Las aplicaciones de escritorio pueden ofrecer un rendimiento superior y acceso a recursos del sistema que no están disponibles en aplicaciones web"
+        ],
+        "data_analityc":[
+            "Soluciones que permiten recopilar, procesar y analizar grandes volúmenes de datos.",
+            "Las herramientas de análisis de datos ayudan a las empresas a tomar decisiones informadas basadas en datos concretos, mejorando la estrategia empresarial"
+        ],
+        "web_3d":[
+            "Desarrollo web, con experiencias interactivas en 3D.",
+            "Ideales para presentaciones de productos, visualizaciones de entornos virtuales, simulaciones y representaciones de lugares en un entorno digital con una experiencia totalmente inmersiva."
+        ],
+        "web_games":[
+            "Videojuegos interactivos para plataformas web.",
+            "Los videojuegos pueden ser una herramienta poderosa para el marketing y la educación, aumentando la participación del usuario.Nos aseguramos de usar tecnologias actuales para el procesamiento de graficos, que permiten una experiencia de juego fluida."
+        ],
+        "blockchain":[
+            "Soluciones basadas en blockchain.",
+            "Ofrecemos servicios de desarrollo de soluciones basadas en blockchain, incluyendo contratos inteligentes y aplicaciones descentralizadas (dApps). La tecnología blockchain proporciona mayor seguridad, transparencia y trazabilidad en las transacciones."
+        ]
+    }
+}

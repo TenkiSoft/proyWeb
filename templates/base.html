@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <title>App Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/lib.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/lib_container.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/lib_carrousel.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/lib_modal.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <script>
+        const carrousels = {}
+        let principal_modal = null
+        document.addEventListener('DOMContentLoaded', () => {
+            principal_modal = new Modal()
+            
+        });
+    </script>
+    <nav>
+        {% block nav %}
+        {% endblock %}
+    </nav>
+    <div id="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div id="background"></div>
+    <div id="modal" class="center">
+    <div id="modal_content">
+        <div id="text_modal_content"></div>
+        <div class="center" id=close_modal>X</div>
+    </div>
+    </div>
+</body>
+</html>
